@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试if和for</title>
+</head>
+<body>
+<!--空格书写亦有要求-->
+{% if x > 10 %}
+今天天气很好
+{% else %}
+今天天气非常好
+{% endif %}
+<br>
+{% for n in lst %}
+    {% if forloop.first %} &&&& {% endif %}
+    <p>{{ forloop.counter }}{{ n }}</p>
+    {% if forloop.last %} ==== {% endif %}
+{% empty %}
+{% endfor %}
+</body>
+</html>
