@@ -5,7 +5,7 @@ from django.db.models import IntegerField, EmailField
 
 
 class Book(models.Model):
-    title = models.CharField('书名', max_length=50, default='', unique=True)
+    title = models.CharField(verbose_name='书名', max_length=50, default='', unique=True)
     #默认django新添字段是null=False,即非空
     pub = models.CharField('出版社', max_length=100, default='')
     price = models.DecimalField('图书定价', max_digits=7, decimal_places=2)
@@ -14,6 +14,8 @@ class Book(models.Model):
     is_active = models.BooleanField('是否活跃', default=True)
     class Meta:
         db_table = 'book'
+        verbose_name = '图书'
+        verbose_name_plural = verbose_name
     def __str__(self):
         return '%s_%s_%s_%s'%(self.title, self.pub, self.price,
                               self.market_price)

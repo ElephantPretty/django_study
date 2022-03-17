@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
+    # session配置1
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
@@ -55,11 +56,15 @@ INSTALLED_APPS = [
     'news',
     # 模型测试
     'bookstore',
+    'oto',
+    'otm',
+    'mtm'
 ]
 #和静态文件相关，默认会配置
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    # session配置2
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     # post请求时会有一个csrf防范

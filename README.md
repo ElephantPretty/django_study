@@ -38,3 +38,12 @@ It's a journey.达内Django项目学习
 22-3-5-更新日志001
 
 001django-ORM-CRUD
+
+22-3-17更新日志001
+
+001admin后台管理
+
+002django映射
+
+003cookies和session
+
